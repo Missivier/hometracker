@@ -1,0 +1,52 @@
+📌 Technologies utilisées
+Express.js 🚀 (API backend)
+TypeScript ✅ (Typage et sécurité)
+PostgreSQL 🛢️ (Base de données)
+Prisma ORM 🔗 (Interaction avec PostgreSQL)
+JWT & bcrypt 🔐 (Authentification sécurisée)
+Docker 🐳 (PostgreSQL et pgAdmin)
+
+
+# 📦 Dépendances Backend avec Explications
+
+## 🏗️ Serveur Express.js
+express - Framework web pour créer l'API
+cors - Gère les permissions d'accès entre le backend et le frontend
+dotenv - Charge les variables d’environnement (.env)
+
+## 🔐 Sécurité
+jsonwebtoken - Génère et vérifie les tokens JWT (authentification)
+bcrypt - Hash les mots de passe avant de les stocker
+
+## 🛢️ Base de données (PostgreSQL)
+@prisma/client - ORM pour interagir avec PostgreSQL facilement
+prisma - Outil CLI pour gérer la base de données (migrations, génération)
+
+## 🔧 Utilitaires
+zod - Valide les données reçues par l’API (ex : vérifier un email valide)
+
+## 🛠️ Dépendances de développement (Dev Dependencies)
+typescript - Ajoute TypeScript pour un code plus robuste
+@types/express - Typage TypeScript pour Express.js
+@types/node - Typage TypeScript pour Node.js
+@types/jsonwebtoken - Typage pour JWT
+@types/bcrypt - Typage pour bcrypt
+@types/cors - Typage pour CORS
+tsx - Permet d’exécuter du TypeScript directement sans compiler
+
+# ⚡ Commandes utiles
+pnpm install - Installe les dépendances
+pnpm prisma migrate dev --name init - Applique les migrations à PostgreSQL
+pnpm tsx src/index.ts - Démarre le serveur en TypeScript
+
+# 🔧 Alias terminal pour le backend
+Ajoute ces alias dans `~/.bashrc` ou `~/.zshrc` :
+alias bdev="pnpm tsx src/index.ts"
+alias bmigrate="pnpm prisma migrate dev --name init"
+alias bstart="pnpm tsx src/index.ts"
+
+Puis recharge ton terminal :
+source ~/.bashrc  # ou source ~/.zshrc
+
+Maintenant, tu peux démarrer le serveur avec :
+bdev

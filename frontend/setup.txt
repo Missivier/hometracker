@@ -1,0 +1,32 @@
+# 📦 Dépendances Frontend avec Explications
+
+## 🎨 UI et CSS
+tailwindcss - Framework CSS utilitaire rapide et personnalisable
+postcss - Outil pour transformer le CSS avec des plugins
+autoprefixer - Ajoute automatiquement les préfixes CSS pour la compatibilité
+
+## 🔄 Vue.js Core
+vue - Framework frontend réactif et performant
+vue-router - Gère la navigation entre les pages
+pinia - Gère l’état global de l’application (remplace Vuex)
+
+## 📡 Requêtes API
+axios - Permet de faire des requêtes HTTP au backend
+
+## 🔧 Dépendances de développement
+vite - Outil de build ultra rapide pour Vue.js
+@vitejs/plugin-vue - Plugin officiel Vue.js pour Vite
+typescript - Ajoute le support TypeScript
+
+# 🔧 Alias terminal pour le frontend
+Ajoute ces alias dans `~/.bashrc` ou `~/.zshrc` :
+alias fdev="pnpm run dev"
+alias fbuild="pnpm run build"
+alias fstart="pnpm run start"
+alias flint="pnpm run lint"
+
+Puis recharge ton terminal :
+source ~/.bashrc  # ou source ~/.zshrc
+
+Maintenant, tu peux lancer le frontend avec :
+fdev
